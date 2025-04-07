@@ -1,6 +1,6 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
-const restartButton = document.getElementbyId(restartButton');
+const restartButton = document.getElementbyId('restartButton');
 
 // Load images
 const playerImage = new Image();
