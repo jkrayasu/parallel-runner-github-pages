@@ -1,5 +1,6 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
+const restartButton = document.getElementbyId(restartButton');
 
 // Load images
 const playerImage = new Image();
@@ -86,6 +87,7 @@ function gameLoop() {
         ctx.fillStyle = 'black';
         ctx.font = '30px Arial';
         ctx.fillText('Game Over', canvas.width / 2 - 70, canvas.height / 2);
+        restartButton.style.display = 'block'; // show the restart button
         return;
     }
 
