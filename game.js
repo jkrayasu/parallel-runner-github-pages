@@ -100,6 +100,16 @@ function gameLoop() {
     requestAnimationFrame(gameLoop);
 }
 
+function restartGame() {
+    player.y = 150;
+    player.dy = 0;
+    obstacles = [];
+    score = 0;
+    gameOver = false;
+    restartButton.style.display = 'none'; // Hide the restart button
+    gameLoop();
+}
+
 // Add event listeners for both keyboard and touch input
 document.addEventListener('keydown', (e) => {
     if (e.code === 'Space') {
