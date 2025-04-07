@@ -100,6 +100,18 @@ function gameLoop() {
     requestAnimationFrame(gameLoop);
 }
 
+// Add event listeners for both keyboard and touch input
+document.addEventListener('keydown', (e) => {
+    if (e.code === 'Space') {
+        jump();
+    }
+});
+
+canvas.addEventListener('touchstart', (e) => {
+    e.preventDefault(); // Prevent scrolling on mobile
+    jump();
+});
+
 document.addEventListener('keydown', (e) => {
     if (e.code === 'Space') {
         jump();
