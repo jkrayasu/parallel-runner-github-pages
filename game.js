@@ -6,7 +6,7 @@ const playerImage = new Image();
 playerImage.src = 'real images/parallel-logo.png'; // Update with the correct path
 
 const obstacleImage = new Image();
-obstacleImage.src = 'real images/arak.jfif'; // Update with the correct path
+obstacleImage.src = 'real images/robot1.png'; // Update with the correct path
 
 let player = {
     x: 50,
