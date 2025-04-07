@@ -3,10 +3,10 @@ const ctx = canvas.getContext('2d');
 
 // Load images
 const playerImage = new Image();
-playerImage.src = 'path/to/parallel logo.png'; // Update with the correct path
+playerImage.src = 'images/parallel-logo.png'; // Update with the correct path
 
 const obstacleImage = new Image();
-obstacleImage.src = 'path/to/arak.jfif'; // Update with the correct path
+obstacleImage.src = 'images/arak.jfif'; // Update with the correct path
 
 let player = {
     x: 50,
@@ -25,14 +25,12 @@ let score = 0;
 let gameOver = false;
 
 function drawPlayer() {
-    ctx.fillStyle = 'black';
-    ctx.fillRect(player.x, player.y, player.width, player.height);
+    ctx.drawImage(playerImage, player.x, player.y, player.width, player.height);
 }
 
 function drawObstacles() {
-    ctx.fillStyle = 'red';
     obstacles.forEach(obstacle => {
-        ctx.fillRect(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
+        ctx.drawImage(obstacleImage, obstacle.x, obstacle.y, obstacle.width, obstacle.height);
     });
 }
 
