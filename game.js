@@ -36,7 +36,7 @@ function drawObstacles() {
 
 function updateObstacles() {
     if (Math.random() < 0.01) {
-        obstacles.push({ x: canvas.width, y: 150, width: 20, height: 20 });
+        obstacles.push({ x: canvas.width, y: player.y, width: 20, height: 20 });
     }
     obstacles.forEach(obstacle => {
         obstacle.x -= gameSpeed;
