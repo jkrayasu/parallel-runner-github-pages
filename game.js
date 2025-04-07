@@ -36,7 +36,7 @@ function drawObstacles() {
 
 function updateObstacles() {
     if (Math.random() < 0.01) {
-        obstacles.push({ x: canvas.width, y: player.y, width: 20, height: 20 });
+        obstacles.push({ x: canvas.width, y: player.y, width: 20, height: 20 }); //// Align obstacle y coordinate with player y coordinate
     }
     obstacles.forEach(obstacle => {
         obstacle.x -= gameSpeed;
