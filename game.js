@@ -3,10 +3,10 @@ const ctx = canvas.getContext('2d');
 
 // Load images
 const playerImage = new Image();
-playerImage.src = './real images/parallel2.png'; // Updated with the correct path
+playerImage.src = './images1/parallel2.png'; // Updated with the correct path
 
 const obstacleImage = new Image();
-obstacleImage.src = './real images/robot1.png'; // Updated with the correct path
+obstacleImage.src = './images1/robot1.png'; // Updated with the correct path
 
 let player = {
     x: 50,
