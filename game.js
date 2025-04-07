@@ -1,6 +1,13 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
+// Load images
+const playerImage = new Image();
+playerImage.src = 'path/to/parallel logo.png'; // Update with the correct path
+
+const obstacleImage = new Image();
+obstacleImage.src = 'path/to/robot.png'; // Update with the correct path
+
 let player = {
     x: 50,
     y: 150,
